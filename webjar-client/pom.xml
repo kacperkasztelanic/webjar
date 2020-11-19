@@ -3,12 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>webjar-client</artifactId>
-    <version>0.0.1</version>
 
     <parent>
         <groupId>com.kkasztel.webjar</groupId>
         <artifactId>webjar</artifactId>
-        <version>0.0.1</version>
+        <version>${revision}</version>
     </parent>
 
     <build>
@@ -22,11 +21,11 @@
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.10.3</version>
+                <version>${frontend-maven-plugin.version}</version>
                 <configuration>
                     <workingDirectory>./</workingDirectory>
-                    <nodeVersion>v14.15.1</nodeVersion>
-                    <npmVersion>6.14.8</npmVersion>
+                    <nodeVersion>${node.version}</nodeVersion>
+                    <npmVersion>${npm.version}</npmVersion>
                 </configuration>
                 <executions>
                     <execution>

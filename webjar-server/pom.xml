@@ -3,19 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>webjar-server</artifactId>
-    <version>0.0.1</version>
 
     <parent>
         <groupId>com.kkasztel.webjar</groupId>
         <artifactId>webjar</artifactId>
-        <version>0.0.1</version>
+        <version>${revision}</version>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>com.kkasztel.webjar</groupId>
             <artifactId>webjar-client</artifactId>
-            <version>0.0.1</version>
+            <version>${revision}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
